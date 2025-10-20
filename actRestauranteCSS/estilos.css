@@ -1,0 +1,93 @@
+
+
+        nav {
+            background-color: #73370c;
+            text-align: center;
+            padding: 0.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .ImagenInicio{
+            width: 300px; 
+            height:auto;
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        header {
+            background-color: #a7430d;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .Ingredientes {
+            background-color: #a7430d;
+            text-decoration: underline;
+            color: white;
+            text-align: center;
+        }
+
+        .imagenFlamenquin {
+            float: right;
+            width: 250px;
+            height: auto;
+            margin-left: 20px;
+            border-radius: 10px;
+            margin-top: -190px;
+            
+        }
+        .imagenTortilla{
+             float: right;
+            width: 250px;
+            height: auto;
+            margin-left: 20px;
+            border-radius: 10px;
+            margin-top: -120px;
+        }
+
+        .imagenRevuelto{
+             float: right;
+            width: 250px;
+            height: auto;
+            margin-left: 20px;
+            border-radius: 10px;
+            margin-top: -150px;
+        }
+
+        .pasosElab{
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style-type:square;
+        }
+        
+        body {
+            background-color: #e4c4ac;
+        }
+
+        .platos {
+            text-align: center;
+            text-decoration:underline;
+        }
+
+         main {
+            background-color: #ebd5c4;
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
