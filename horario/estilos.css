@@ -1,0 +1,69 @@
+.enlace-superior {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(104, 161, 253);
+  padding: 15px;
+  text-align: center;
+  border-bottom: 2px solid #000000;
+  z-index: 1000;
+}
+
+.enlace-superior a {
+  font-size: 1.2em;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+body {
+  background-color: rgb(182, 210, 255);
+  font-family: Arial, sans-serif;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 80%;           
+  margin: 180px auto;   
+  font-size: 1.2em;     
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+  background-color: white;
+}
+
+td {
+  text-align: center;
+  padding: 10px;
+}
+
+.titulo {
+  background-color: #ecc4c4;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.descanso {
+  background-color: #ecc4c4;
+  font-weight: bold;
+}
+
+.dias {
+  background-color: aquamarine;
+  font-weight: bold;
+}
+
+.horas {
+  background-color: rgb(133, 235, 239);
+  font-weight: bold;
+}
+
+/* Asignaturas */
+.programacion { background-color: darkgoldenrod; font-weight: bold; }
+.entornos { background-color: deeppink; font-weight: bold; }
+.lenguaje { background-color: greenyellow; font-weight: bold; }
+.fol { background-color: khaki; font-weight: bold; }
+.baseDatos { background-color: crimson; font-weight: bold; }
+.sistemasInf { background-color: lightgreen; font-weight: bold; }
+.digitalizacion { background-color: darkviolet; font-weight: bold; }
+.sostenibilidad { background-color: mediumslateblue; font-weight: bold; }
