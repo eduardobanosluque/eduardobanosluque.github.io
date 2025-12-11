@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contacto | Envíenos su mensaje</title>
+    <meta name="description" content="Formulario de contacto para enviar dudas, consultas o comentarios a nuestro restaurante.">
+    <meta name="keywords" content="contacto, restaurante, mensaje, consulta, formulario">
+    
+    <link rel="stylesheet" href="contacto.css">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+
+</head>
+
+<body>
+    <a href="index.html" class="volver">Volver a la página del restaurante</a>
+
+    <div class="contacto-container">
+        <h1>Envíenos su mensaje</h1>
+        
+        <form id="contactoForm">
+
+            <div class="form-row">
+                <div class="form-group input-icon nombre-icon">
+                    <label for="nombre" class="required">Su nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group input-icon email-icon">
+                    <label for="email" class="required">Su correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                </div>
+                
+                <div class="form-group input-icon telefono-icon">
+                    <label for="telefono" class="required">Su teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su número de teléfono" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="asunto" class="required">Asunto</label>
+                <input type="text" id="asunto" name="asunto" placeholder="¿Sobre qué desea contactarnos?" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="mensaje" class="required">Su mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escriba su mensaje aquí..." maxlength="500" required></textarea>
+                <div class="char-counter" id="charCounter">0 / 500</div>
+            </div>
+            
+            <button type="submit" class="submit-btn">ENVIAR</button>
+        </form>
+    </div>
+
+</body>
+</html>

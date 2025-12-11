@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario para formar parte del club de "Amigos de la informática"</title>
+    <link rel="stylesheet" href="formulario2.css">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+
+    <meta name="description" content="Únete al club Amigos de la Informática. Rellena nuestro cuestionario de inscripción y forma parte de nuestra comunidad tecnológica.">
+    <meta name="keywords" content="club informática, amigos informática, cuestionario inscripción, tecnología, comunidad informática, formulario inscripción">
+    <meta name="author" content="Club Amigos de la Informática">
+    <meta name="robots" content="index, follow">
+
+</head>
+<body>
+    <div class="cuestionario">
+        <h1>Rellena el siguiente cuestionario para formar parte del club de "Amigos de la informática"</h1>
+        
+        <form action="#" method="post">
+            <h2>Nombre:</h2>
+            <div class="campo">
+                <input type="text" name="nombre" required>
+            </div>
+            
+            <h2>Domicilio:</h2>
+            <div class="campo">
+                <input type="text" name="domicilio" placeholder="calle, numero y localidad" required>
+            </div>
+            
+            <h2>País de origen:</h2>
+            <div class="campo">
+                <input type="text" name="pais" value="España" readonly style="background-color: #f0f0f0;">
+            </div>
+            
+            <h2>Fecha de nacimiento:</h2>
+            <div class="campo">
+                <div class="inline-inputs">
+                    <input type="text" name="dia" placeholder="dd" maxlength="2" size="4">
+                    <span style="align-self: center;">/</span>
+                    <input type="text" name="mes" placeholder="mm" maxlength="2" size="4">
+                    <span style="align-self: center;">/</span>
+                    <input type="text" name="ano" placeholder="ssss" maxlength="4" size="6">
+                </div>
+                <div class="nota">Formato: dd / mm / aaaa</div>
+            </div>
+            
+            <h2>Correo electrónico:</h2>
+            <div class="campo">
+                <input type="email" name="email" required>
+            </div>
+            
+            <h2>Teléfono:</h2>
+            <div class="campo">
+                <input type="tel" name="telefono" required>
+            </div>
+            
+            <div class="opciones">
+                <div class="grupo-opciones">
+                    <h2>Estado civil:</h2>
+                    <div class="opcion">
+                        <input type="radio" id="soltero" name="estado_civil" value="soltero">
+                        <label for="soltero">Solter@</label>
+                    </div>
+                    <div class="opcion">
+                        <input type="radio" id="casado" name="estado_civil" value="casado">
+                        <label for="casado">Casad@</label>
+                    </div>
+                    <div class="opcion">
+                        <input type="radio" id="separado" name="estado_civil" value="separado">
+                        <label for="separado">Separad@</label>
+                    </div>
+                    <div class="opcion">
+                        <input type="radio" id="viudo" name="estado_civil" value="viudo">
+                        <label for="viudo">Viud@</label>
+                    </div>
+                </div>
+                
+                <div class="grupo-opciones">
+                    <h2>Sexo:</h2>
+                    <div class="opcion">
+                        <input type="radio" id="hombre" name="sexo" value="hombre">
+                        <label for="hombre">Hombre</label>
+                    </div>
+                    <div class="opcion">
+                        <input type="radio" id="mujer" name="sexo" value="mujer">
+                        <label for="mujer">Mujer</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="separador"></div>
+            
+            <h2>Otra información de interés</h2>
+            <table class="tabla-dispositivos">
+                <tr>
+                    <td><strong>Móvil</strong></td>
+                    <td><strong>Tablet</strong></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select class="select-dispositivo" name="movil">
+                            <option value="">Seleccione uso</option>
+                            <option value="nunca">Nunca uso</option>
+                            <option value="poco">Poco uso</option>
+                            <option value="regular">Uso regular</option>
+                            <option value="mucho">Mucho uso</option>
+                            <option value="siempre">Uso constante</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="select-dispositivo" name="tablet">
+                            <option value="">Seleccione uso</option>
+                            <option value="nunca">Nunca uso</option>
+                            <option value="poco">Poco uso</option>
+                            <option value="regular">Uso regular</option>
+                            <option value="mucho">Mucho uso</option>
+                            <option value="siempre">Uso constante</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Ordenador</strong></td>
+                    <td><strong>Ebook</strong></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select class="select-dispositivo" name="ordenador">
+                            <option value="">Seleccione uso</option>
+                            <option value="nunca">Nunca uso</option>
+                            <option value="poco">Poco uso</option>
+                            <option value="regular">Uso regular</option>
+                            <option value="mucho">Mucho uso</option>
+                            <option value="siempre">Uso constante</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="select-dispositivo" name="ebook">
+                            <option value="">Seleccione uso</option>
+                            <option value="nunca">Nunca uso</option>
+                            <option value="poco">Poco uso</option>
+                            <option value="regular">Uso regular</option>
+                            <option value="mucho">Mucho uso</option>
+                            <option value="siempre">Uso constante</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            
+            <div class="separador"></div>
+            
+            
+            <h2>Seleccione los componentes electrónicos con los que habitualmente trabajas:</h2>
+            <div class="componentes">
+                <textarea name="componentes" rows="4" placeholder="Escribe aquí los componentes electrónicos..."></textarea>
+            </div>
+            
+            <h2>Seleccione tus actividades favoritas:</h2>
+            <div class="actividades">
+                <div class="actividad">
+                    <input type="checkbox" id="deporte" name="actividades[]" value="deporte">
+                    <label for="deporte">Hacer deporte</label>
+                </div>
+                <div class="actividad">
+                    <input type="checkbox" id="amigos" name="actividades[]" value="amigos">
+                    <label for="amigos">Salir con mis amigos</label>
+                </div>
+                <div class="actividad">
+                    <input type="checkbox" id="series" name="actividades[]" value="series">
+                    <label for="series">Ver series, pelis...</label>
+                </div>
+                <div class="actividad">
+                    <input type="checkbox" id="senderismo" name="actividades[]" value="senderismo">
+                    <label for="senderismo">Realizar rutas de senderismo</label>
+                </div>
+                <div class="actividad">
+                    <input type="checkbox" id="cine" name="actividades[]" value="cine">
+                    <label for="cine">Ir al cine</label>
+                </div>
+                <div class="actividad">
+                    <input type="checkbox" id="musica" name="actividades[]" value="musica">
+                    <label for="musica">Escuchar música</label>
+                </div>
+            </div>
+            
+            <h2>Explique brevemente el motivo por el que desea ingresar en nuestro club:</h2>
+            <div class="campo">
+                <textarea name="motivo" rows="4" placeholder="Escribe aquí tu motivo..."></textarea>
+            </div>
+            
+            <h2>Elige o escribe tu peli favorita:</h2>
+            <div class="campo">
+                <input type="text" name="peli_favorita" placeholder="Nombre de tu película favorita">
+            </div>
+            
+            <div class="botones">
+                <button type="submit" class="enviar">Enviar</button>
+                <button type="reset" class="cancelar">Cancelar</button>
+                <a href="index.html" class="btn btn-main">Volver al menú</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
