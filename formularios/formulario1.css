@@ -1,0 +1,172 @@
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .formulario {
+            width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        
+        .titulo-principal {
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #0066cc;
+        }
+        
+        .subtitulo {
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #0066cc;
+        }
+        
+        .seccion {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #999;
+            background: #f9f9f9;
+        }
+        
+        .titulo-seccion {
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+            font-size: 16px;
+        }
+        
+        .fila {
+            display: flex;
+            margin-bottom: 15px;
+        }
+        
+        .campo {
+            flex: 1;
+            margin-right: 10px;
+        }
+        
+        .campo:last-child {
+            margin-right: 0;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input, select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #999;
+        }
+        
+        .provincia-fecha {
+            display: flex;
+        }
+        
+        .provincia {
+            width: 150px;
+            margin-right: 15px;
+        }
+        
+        .fecha {
+            flex: 1;
+        }
+        
+        .acceso-opciones {
+            display: flex;
+        }
+        
+        .directo {
+            flex: 1;
+            margin-right: 30px;
+        }
+        
+        .opciones-acceso {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        .opcion-acceso {
+            margin-bottom: 8px;
+        }
+        
+        .prueba-libre {
+            margin-top: 10px;
+        }
+        
+        .documentos {
+            margin-left: 20px;
+        }
+        
+        .documento {
+            margin-bottom: 10px;
+        }
+        
+        .botones {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        button {
+            padding: 10px 30px;
+            margin: 0 10px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        .enviar {
+            background: #4CAF50;
+            color: white;
+        }
+        
+        .limpiar {
+            background: #f44336;
+            color: white;
+        }
+        
+        .campo-especificar {
+            margin-left: 25px;
+            margin-top: 5px;
+        }
+        
+        .campo-especificar input {
+            width: 300px;
+        }
+
+        a.btn {
+            display: block;
+            width: 100%;
+            padding: 15px 0;
+            margin: 12px 0;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none;
+            border: none;
+            background-color: #efefef;
+            color: #333;
+            transition: 0.2s;
+        }
+
+        a.btn:hover {
+            background-color: #e0e0e0;
+        }
+
+        a.btn-main {
+            background-color: #0070d9;
+            color: white;
+            font-weight: bold;
+        }
+
+        a.btn-main:hover {
+            background-color: #0070d9;
+        }
