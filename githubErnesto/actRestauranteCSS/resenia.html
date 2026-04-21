@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>Reseña del Plato</title>
+    <meta name="description" content="Deja tu reseña y calificación del plato que probaste en nuestro restaurante.">
+    <meta name="keywords" content="reseña, plato, opinión, restaurante">
+
+    <link rel="stylesheet" href="resenia.css">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+
+
+</head>
+<body>
+    <a href="index.html" class="volver">Volver a la página del restaurante</a>
+    <div class="review-form">
+        <h1>Reseña del Plato</h1>
+        
+        <form id="reviewForm">
+            <div class="form-group">
+                <label for="nombre">Su nombre *</label>
+                <input type="text" id="nombre" required>
+            </div>
+            
+            <div class="rating">
+                <label>Calificación del plato *</label>
+                <div class="stars" id="stars">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <div class="rating-text">1 estrella = Malo, 5 estrellas = Excelente</div>
+                <input type="hidden" id="rating" value="0" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="titulo">Título de su reseña *</label>
+                <input type="text" id="titulo" placeholder="Ej: 'Deliciosa paella' o 'Muy salada'" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="experiencia">Su experiencia con este plato *</label>
+                <textarea id="experiencia" placeholder="Describa su experiencia: sabor, presentación, temperatura, etc." required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="recomienda">¿Recomendaría este plato?</label>
+                <select id="recomienda">
+                    <option value="">Seleccionar</option>
+                    <option value="si">Sí, definitivamente</option>
+                    <option value="tal vez">Tal vez</option>
+                    <option value="no">No lo recomiendo</option>
+                </select>
+            </div>
+            
+            <button type="submit" class="submit-btn">ENVIAR RESEÑA DEL PLATO</button>
+        </form>
+    </div>
+
+</body>
+</html>

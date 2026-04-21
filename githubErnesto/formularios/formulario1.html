@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario1.css">
+
+    <title>Formulario de Inscripción - Ciclos Formativos de Grado Superior</title>
+    <meta name="description" content="Formulario oficial de inscripción para Ciclos Formativos de Grado Superior en la provincia de Huelva. Inscríbete ahora en nuestra plataforma educativa.">
+    <meta name="keywords" content="inscripción, ciclos formativos, grado superior, Huelva, formación profesional, educación, FP, matrícula">
+    <meta name="author" content="Centro Educativo de Formación Profesional">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+
+</head>
+<body>
+    <div class="formulario">
+        <h1 class="titulo-principal">HOJA DE INSCRIPCION</h1>
+        <p class="subtitulo">EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</p>
+        
+        <form action="#" method="post">
+           
+            <div class="seccion">
+                <div class="titulo-seccion">Datos Personales</div>
+                
+                <div class="fila">
+                    <div class="campo">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre">
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidos" name="apellidos">
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="dni">DNI:</label>
+                        <input type="text" id="dni" name="dni" placeholder="Ej: 12345678X">
+                    </div>
+                </div>
+                
+                <div class="fila">
+                    <div class="campo">
+                        <label for="localidad">Localidad de Nacimiento:</label>
+                        <input type="text" id="localidad" name="localidad">
+                    </div>
+                    
+                    <div class="provincia-fecha">
+                        <div class="provincia">
+                            <label for="provincia">Provincia:</label>
+                            <select id="provincia" name="provincia">
+                                <option value="huelva" selected>Huelva</option>
+                                <option value="almeria">Almería</option>
+                                <option value="cadiz">Cádiz</option>
+                                <option value="cordoba">Córdoba</option>
+                                <option value="granada">Granada</option>
+                                <option value="jaen">Jaén</option>
+                                <option value="malaga">Málaga</option>
+                                <option value="sevilla">Sevilla</option>
+                        </select>
+                 </div>
+                    <div class="fecha">
+                            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                            <input type="text" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="dd/mm/aaaa">
+                            <div class="hint">Formato: día/mes/año</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fila">
+                    <div class="campo">
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" id="direccion" name="direccion">
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="codigo_postal">Código Postal:</label>
+                        <input type="text" id="codigo_postal" name="codigo_postal" placeholder="Ej: 21001">
+                    </div>
+                </div>
+            </div>
+            
+        
+            <div class="seccion">
+                <div class="titulo-seccion">Forma de Acceso</div>
+                
+                <div class="acceso-opciones">
+                    <div class="directo">
+                        <div class="opcion-acceso">
+                            <input type="radio" id="directo" name="acceso" value="directo">
+                            <label for="directo">Directo</label>
+                        </div>
+                        
+                        <div class="opciones-acceso">
+                            <div class="opcion-acceso">
+                                <input type="radio" id="bachillerato" name="modalidad" value="bachillerato">
+                                <label for="bachillerato">Bachillerato Log Modalidad</label>
+                            </div>
+                            
+                            <div class="opcion-acceso">
+                                <input type="radio" id="experimental" name="modalidad" value="experimental">
+                                <label for="experimental">Experimental</label>
+                            </div>
+                            
+                            <div class="opcion-acceso">
+                                <input type="radio" id="cou" name="modalidad" value="cou">
+                                <label for="cou">COU Opción</label>
+                            </div>
+                            
+                            <div class="opcion-acceso">
+                                <input type="radio" id="fp2" name="modalidad" value="fp2">
+                                <label for="fp2">FP2</label>
+                            </div>
+                            
+                            <div class="opcion-acceso">
+                                <input type="radio" id="otros" name="modalidad" value="otros">
+                                <label for="otros">Otros (especifique)</label>
+                                <div class="campo-especificar">
+                                    <input type="text" id="otros_especifico" name="otros_especifico" placeholder="Especifique aquí">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="prueba-libre">
+                        <div class="opcion-acceso">
+                            <input type="radio" id="prueba_libre" name="acceso" value="prueba_libre">
+                            <label for="prueba_libre">Prueba Libre</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="seccion">
+                <div class="titulo-seccion">Documentos Adjuntados</div>
+                
+                <div class="documentos">
+                    <div class="documento">
+                        <input type="checkbox" id="fotocopia_dni" name="documentos[]" value="fotocopia_dni">
+                        <label for="fotocopia_dni">Fotocopia DNI</label>
+                    </div>
+                    
+                    <div class="documento">
+                        <input type="checkbox" id="certificado_academico" name="documentos[]" value="certificado_academico">
+                        <label for="certificado_academico">Certificado Académico</label>
+                    </div>
+                    
+                    <div class="documento">
+                        <input type="checkbox" id="otros_documentos" name="documentos[]" value="otros_documentos">
+                        <label for="otros_documentos">Otros documentos (especifique)</label>
+                        <div class="campo-especificar">
+                            <input type="text" id="otros_docs_especifico" name="otros_docs_especifico" placeholder="Especifique aquí">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="botones">
+                <button type="submit" class="enviar-btn">Enviar Solicitud</button>
+                <button type="reset" class="limpiar-btn">Limpiar datos</button>
+                <a href="index.html" class="btn btn-main">Volver al menú</a>
+            </div>
+        </form>
+    </div>
+    </body>
+    </html>
