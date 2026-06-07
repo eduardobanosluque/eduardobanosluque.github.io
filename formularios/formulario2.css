@@ -1,0 +1,306 @@
+/* ==========================================
+   ESTILOS BASE E INSTITUCIONALES
+   ========================================== */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Cabecera IES arriba a la izquierda */
+.cabecera-ies {
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #000000;
+}
+.cabecera-ies .instituto {
+    font-weight: bold;
+    margin: 0;
+}
+.cabecera-ies .departamento {
+    font-style: italic;
+    margin: 0;
+}
+
+/* Contenedor centrado para la práctica */
+.contenedor-principal {
+    width: 780px;
+    margin: 0 auto;
+}
+
+/* Título superior en cursiva y ocre dorado */
+.introduccion {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo-principal {
+    font-family: 'Georgia', serif;
+    color: #b08d47;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* ==========================================
+   ESTILOS BASE DE LAS TARJETAS (FIELDSETS)
+   ========================================== */
+.tarjeta-formulario {
+    position: relative;
+    border: none;
+    /* Redondeado asimétrico idéntico a la imagen */
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 35px 30px 25px 30px;
+    margin-bottom: 40px;
+}
+
+/* Tarjeta de Arriba: Fondo más oscuro, sombra más clara y suave */
+.tarjeta-arriba {
+    background-color: #cb9643; /* Ocre/dorado tostado más oscuro */
+    box-shadow: 14px 14px 0px #e6cb9e; /* Sombra sólida clarita de tono arena */
+}
+
+/* Tarjeta de Abajo: Fondo más claro/vivo, sombra marrón bien oscura */
+.tarjeta-abajo {
+    background-color: #eab459; /* Amarillo/naranja ocre más encendido */
+    box-shadow: 14px 14px 0px #bd832a; /* Sombra sólida marrón oscura con fuerza */
+}
+
+/* Texto flotante en la esquina superior derecha */
+.etiqueta-flotante {
+    position: absolute;
+    top: 12px;
+    right: 25px;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    font-size: 15px;
+    color: #000000;
+}
+
+/* ==========================================
+   ALINEACIÓN DE LÍNEAS Y CAMPOS (FLEXBOX)
+   ========================================== */
+.control-formulario {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Ancho exacto a las etiquetas de la izquierda */
+.control-formulario label, 
+.label-falso {
+    display: inline-block;
+    width: 160px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #000000;
+    text-align: right;
+    padding-right: 12px;
+}
+
+/* Estilos de las cajas de texto blancas */
+.control-formulario input[type="text"],
+.control-formulario input[type="email"],
+.control-formulario input[type="tel"],
+.select-pais {
+    border: 1px solid #a5a5a5;
+    padding: 4px 6px;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #000000;
+    outline: none;
+}
+
+/* Anchos proporcionales a la foto */
+.input-largo {
+    width: 440px;
+}
+
+.select-pais {
+    width: 140px;
+    height: 26px;
+}
+
+.input-mediano {
+    width: 170px;
+}
+
+.input-corto {
+    width: 110px;
+}
+
+/* Marcador de posición de los inputs */
+.control-formulario input::placeholder {
+    color: #8f8f8f;
+}
+
+/* Agrupamiento para Radios en línea */
+.grupo-inline {
+    margin-top: 12px;
+}
+
+.radios-inline {
+    display: flex;
+    gap: 15px;
+}
+
+.radios-inline label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    width: auto;
+    font-weight: normal;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* ==========================================
+   ELEMENTOS MULTIPLE Y CHECKBOXES
+   ========================================== */
+.bloque-componentes {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.texto-pregunta {
+    font-weight: bold;
+    font-size: 14px;
+    color: #000000;
+    width: 520px;
+    line-height: 1.4;
+}
+
+/* Caja select múltiple con scrollbar */
+.selector-multiple {
+    width: 120px;
+    height: 78px;
+    border: 1px solid #a5a5a5;
+    background-color: #ffffff;
+    font-family: inherit;
+    font-size: 13px;
+    padding: 2px;
+}
+
+.texto-pregunta-actividades {
+    font-weight: bold;
+    font-size: 14px;
+    color: #000000;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* Cuadrícula de actividades en 3 columnas */
+.cuadrícula-actividades {
+    display: grid;
+    grid-template-columns: 215px 215px 215px;
+    row-gap: 8px;
+    column-gap: 10px;
+    margin-bottom: 25px;
+}
+
+.cuadrícula-actividades label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: #000000;
+    cursor: pointer;
+}
+
+/* Área de texto */
+.campo-textarea {
+    margin-bottom: 20px;
+}
+
+.label-bloque {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.campo-textarea textarea {
+    width: 100%;
+    border: 1px solid #a5a5a5;
+    padding: 6px;
+    font-family: inherit;
+    font-size: 14px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+/* Tramo final */
+.peli-seccion {
+    margin-top: 20px;
+}
+.label-peli {
+    width: 250px !important;
+}
+.input-peli {
+    width: 220px;
+}
+
+/* ==========================================
+   BOTONES ESTILO CÁPSULA MARRÓN
+   ========================================== */
+.bloque-botones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.btn-capsula {
+    background-color: #553c1b;
+    color: #ffffff;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 65px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 4px 5px rgba(0,0,0,0.2);
+    transition: background 0.15s;
+}
+
+.btn-capsula:hover {
+    background-color: #422e14;
+}
+
+/* ==========================================
+   ZONA DE RETORNO (ENLACE VOLVER ATRÁS)
+   ========================================== */
+.zona-regreso {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-top: 1px dashed #cccccc;
+    padding-top: 20px;
+}
+
+.enlace-volver {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    font-weight: bold;
+    color: #553c1b;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.2s;
+}
+
+.enlace-volver:hover {
+    text-decoration: underline;
+    color: #b08d47;
+}

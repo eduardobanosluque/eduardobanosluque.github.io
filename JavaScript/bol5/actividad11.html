@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 11 - Sumatorio Acumulativo</title>
+    <meta name="description" content="Calcula la suma total acumulada desde el cero hasta el número introducido.">
+    <link rel="stylesheet" href="actividad11.css">
+</head>
+<body>
+    <header>
+        <h1>La Clave del Chef - Actividad 11</h1>
+    </header>
+    <main class="contenedor">
+<a href="../index.html" class="btn-volver">Volver al Menú</a>
+        <h2>Sumatorio desde 0 hasta N</h2>
+        <form>
+            <div class="form-group">
+                <label for="numeroN">Introduce un número límite (N):</label>
+                <input type="number" id="numeroN" min="0" required>
+            </div>
+            <button type="button" class="btn-enviar" onclick="calcularSumatorio()">Calcular Bucle</button>
+        </form>
+        <div id="resultado" class="resultado-box"></div>
+    </main>
+    <script src="actividad11.js"></script>
+</body>
+</html>

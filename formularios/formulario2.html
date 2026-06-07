@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario II - Club Amigos de la Informática</title>
+    
+    <meta name="description" content="Cuestionario de inscripción para formar parte del club Amigos de la Informática del IES Inca Garcilaso.">
+    <meta name="keywords" content="Formulario II, Amigos de la Informática, IES Inca Garcilaso, Cuestionario">
+    <meta name="author" content="Departamento de Informática">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+    
+    <link rel="stylesheet" href="formulario2.css">
+</head>
+<body>
+
+    <header class="cabecera-ies">
+        <p class="instituto">IES Inca Garcilaso</p>
+        <p class="departamento">Departamento de Informática</p>
+    </header>
+
+    <main class="contenedor-principal">
+        
+        <section class="introduccion">
+            <h1 class="titulo-principal">Rellena el siguiente cuestionario para formar parte del club de<br>"Amigos de la informática"</h1>
+        </section>
+
+        <form action="#" method="post">
+            
+            <fieldset class="tarjeta-formulario tarjeta-arriba">
+                <legend class="etiqueta-flotante">Datos personales</legend>
+                
+                <div class="control-formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" class="input-largo">
+                </div>
+                
+                <div class="control-formulario">
+                    <label for="domicilio">Domicilio:</label>
+                    <input type="text" id="domicilio" name="domicilio" class="input-largo" placeholder="&lt;calle, numero y localidad&gt;">
+                </div>
+                
+                <div class="control-formulario">
+                    <label for="pais">País de origen:</label>
+                    <select id="pais" name="pais_origen" class="select-pais">
+                        <option value="España" selected>España</option>
+                        <option value="Otros">Otros</option>
+                    </select>
+                </div>
+                
+                <div class="control-formulario">
+                    <label for="fecha_nac">Fecha de nacimiento:</label>
+                    <input type="text" id="fecha_nac" name="fecha_nacimiento" class="input-mediano" placeholder="dd/mm/aaaa">
+                </div>
+                
+                <div class="control-formulario">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="correo" class="input-largo">
+                </div>
+                
+                <div class="control-formulario">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="tlf" class="input-corto">
+                </div>
+                
+                <div class="control-formulario grupo-inline">
+                    <span class="label-falso">Estado civil:</span>
+                    <div class="radios-inline">
+                        <label><input type="radio" name="estado_civil" value="soltero"> Solter@</label>
+                        <label><input type="radio" name="estado_civil" value="casado" checked> Casad@</label>
+                        <label><input type="radio" name="estado_civil" value="separado"> Separad@</label>
+                        <label><input type="radio" name="estado_civil" value="viudo"> Viud@</label>
+                    </div>
+                </div>
+                
+                <div class="control-formulario grupo-inline">
+                    <span class="label-falso">Sexo:</span>
+                    <div class="radios-inline">
+                        <label><input type="radio" name="sexo" value="hombre"> Hombre</label>
+                        <label><input type="radio" name="sexo" value="mujer"> Mujer</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="tarjeta-formulario tarjeta-abajo">
+                <legend class="etiqueta-flotante">Otra información de interés</legend>
+                
+                <div class="bloque-componentes">
+                    <span class="texto-pregunta">Seleccione los componentes electrónicos con los que habitualmente trabajas:</span>
+                    <select name="componentes[]" id="componentes" multiple size="4" class="selector-multiple">
+                        <option value="movil">Móvil</option>
+                        <option value="tablet">Tablet</option>
+                        <option value="ordenador">Ordenador</option>
+                        <option value="ebook">Ebook</option>
+                    </select>
+                </div>
+                
+                <p class="texto-pregunta-actividades">Seleccione tus actividades favoritas:</p>
+                <div class="cuadrícula-actividades">
+                    <label><input type="checkbox" name="actividades[]" value="deporte"> Hacer deporte</label>
+                    <label><input type="checkbox" name="actividades[]" value="amigos"> Salir con mis amigos</label>
+                    <label><input type="checkbox" name="actividades[]" value="series"> Ver series, pelis...</label>
+                    <label><input type="checkbox" name="actividades[]" value="senderismo"> Realizar rutas de senderiso</label>
+                    <label><input type="checkbox" name="actividades[]" value="cine"> Ir al cine</label>
+                    <label><input type="checkbox" name="actividades[]" value="musica"> Escuchar música</label>
+                </div>
+                
+                <div class="campo-textarea">
+                    <label for="motivo" class="label-bloque">Explique brevemente el motivo por el que desea ingresar en nuestro club:</label>
+                    <textarea id="motivo" name="motivo_ingreso" rows="4"></textarea>
+                </div>
+                
+                <div class="control-formulario peli-seccion">
+                    <label for="peli" class="label-peli">Elige o escribe tu peli favorita:</label>
+                    <input type="text" id="peli" name="peli_favorita" class="input-peli">
+                </div>
+            </fieldset>
+
+            <div class="bloque-botones">
+                <button type="submit" class="btn-capsula">Enviar</button>
+                <button type="reset" class="btn-capsula">Cancelar</button>
+            </div>
+            
+            <div class="zona-regreso">
+                <a href="index.html" class="enlace-volver">← Volver al menú de actividades</a>
+            </div>
+        </form>
+    </main>
+
+</body>
+</html>

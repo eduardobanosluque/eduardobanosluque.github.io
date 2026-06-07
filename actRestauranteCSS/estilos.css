@@ -1,0 +1,109 @@
+        .ImagenInicio{
+            width: 300px; 
+            height:auto;
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .imagenFlamenquin {
+            float: right;
+            width: 250px;
+            height: auto;
+            margin-left: 20px;
+            border-radius: 10px;
+            margin-top: -220px;
+            
+        }
+        .imagenTortilla{
+             float: right;
+            width: 250px;
+            height: auto;
+            margin-left: 20px;
+            border-radius: 10px;
+            margin-top: -165px;
+        }
+
+        .imagenRevuelto{
+             float: right;
+            width: 250px;
+            height: auto;
+            margin-left: 20px;
+            border-radius: 10px;
+            margin-top: -180px;
+        }
+        
+        body {
+            background-color: #d69763;
+        }
+
+        .platos {
+            text-align: center;
+            text-decoration:underline;
+        }
+
+         main {
+            background-color: #ebd5c4;
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+
+        .caja {
+            background-color: #eca76e;
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .caja-platos {
+            text-align: center;
+        }
+
+        .header {
+            background-color: #803e1b;
+                    color: white;
+                    text-align: center;
+                    padding: 1rem;
+                }
+                
+        .menu-cajas {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 15px;
+            background-color: #eca76e;
+        }
+
+        .boton {
+            display: block;
+            padding: 12px;
+            background: #74380d;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .volver {
+            background: #9f4413;
+        }
+
+        .texto {
+            background-color: #eca76e;
+        }
+
+        footer{
+            width: 100%;
+            background-color: #803e1b;
+            color: #000000;
+            text-align: center;
+            padding: 10px 0;
+            box-sizing: border-box;
+            box-shadow: 0 -2px 6px rgba(0,0,0,0.06)
+        }

@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    /* Color de fondo de tu restaurante */
+    background-color: #d69763;
+    padding: 20px;
+}
+
+.review-form {
+    max-width: 600px;
+    margin: 30px auto 0 auto;
+    /* Tono crema del contenedor principal de tu restaurante */
+    background: #ebd5c4;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    /* Marrón chocolate de tus títulos */
+    color: #803e1b;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    /* Marrón oscuro para los campos */
+    color: #74380d;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    /* Bordes integrados con tu diseño */
+    border: 1px solid #eca76e;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #803e1b;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.rating {
+    margin: 20px 0;
+}
+
+.stars {
+    font-size: 30px;
+    cursor: pointer;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.star {
+    color: #b0a398;
+    margin: 0 3px;
+    transition: color 0.2s ease;
+}
+
+/* Estrella seleccionada con un color ocre brillante */
+.star.selected {
+    color: #74380d;
+}
+
+.rating-text {
+    text-align: center;
+    font-size: 14px;
+    color: #613014;
+    margin-top: 5px;
+}
+
+/* Botón enviar con el estilo principal del restaurante */
+.submit-btn {
+    background-color: #74380d;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #572908;
+}
+
+/* Botón de regreso idéntico al de tu menú */
+.volver {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #9f4413;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.volver:hover {
+    background: #7c340d;
+}

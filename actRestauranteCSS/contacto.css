@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* Color de fondo igual al de tu restaurante */
+    background-color: #d69763;
+    padding: 40px 20px;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Cabecera idéntica a la de la página principal del restaurante */
+.header-contacto {
+    background-color: #803e1b;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 700px;
+    margin: 0 auto;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.contacto-container {
+    max-width: 700px;
+    margin: 0 auto;
+    /* Color de fondo de las cajas/texto de tu restaurante */
+    background-color: #ebd5c4; 
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    padding: 40px;
+}
+
+h1 {
+    /* Color de los textos importantes del restaurante */
+    color: #803e1b;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 15px;
+    /* Línea divisoria en marrón oscuro */
+    border-bottom: 3px solid #803e1b;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #74380d;
+    font-size: 16px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #eca76e;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+/* Efecto cuando el cliente hace clic en una caja de texto */
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #74380d;
+    box-shadow: 0 0 0 3px rgba(116, 56, 13, 0.15);
+}
+
+textarea {
+    min-height: 180px;
+    resize: vertical;
+    line-height: 1.5;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.form-row .form-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+.char-counter {
+    text-align: right;
+    font-size: 14px;
+    color: #74380d;
+    margin-top: 5px;
+}
+
+/* Color rojo de alerta si supera el límite */
+.char-counter.limit {
+    color: #e74c3c;
+}
+
+/* Botón de Enviar con el color de los botones del restaurante */
+.submit-btn {
+    background: #74380d;
+    color: white;
+    border: none;
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.submit-btn:hover {
+    background: #572908;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 14px rgba(116, 56, 13, 0.3);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* El asterisco de campo requerido en color rojo */
+.required::after {
+    content: " *";
+    color: #e74c3c;
+}
+
+.input-icon {
+    position: relative;
+}
+
+.input-icon input, .input-icon textarea {
+    padding-left: 45px;
+}
+
+.input-icon::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+/* Bloque para el enlace de regreso */
+.contenedor-volver {
+    max-width: 700px;
+    margin: 20px auto 0 auto;
+    text-align: center;
+}
+
+/* Estilo del botón volver igual al de la página principal */
+.volver {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #9f4413;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.volver:hover {
+    background: #7c340d;
+}

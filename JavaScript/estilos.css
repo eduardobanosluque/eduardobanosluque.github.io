@@ -1,0 +1,51 @@
+.caja-principal {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.bloque-actividades {
+    margin-bottom: 30px;
+    background-color: #ebd5c4; /* Tono crema del restaurante */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.bloque-actividades h2 {
+    color: #803e1b; /* Marrón chocolate */
+    margin-bottom: 15px;
+    border-bottom: 2px solid #d69763;
+    padding-bottom: 5px;
+    font-size: 1.3rem;
+}
+
+.grid-actividades {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 12px;
+}
+
+.boton {
+    display: block;
+    text-align: center;
+    background-color: #74380d; /* Botón oscuro del restaurante */
+    color: white;
+    padding: 12px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.boton:hover {
+    background-color: #572908;
+    transform: translateY(-2px);
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #803e1b;
+    font-weight: bold;
+}

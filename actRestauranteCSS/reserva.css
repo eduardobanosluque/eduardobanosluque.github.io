@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    /* Color de fondo general de tu restaurante */
+    background-color: #d69763;
+    padding: 20px;
+    color: #333;
+}
+
+.reserva-container {
+    max-width: 800px;
+    margin: 30px auto 0 auto;
+    /* Color crema de tu restaurante */
+    background-color: #ebd5c4;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    padding: 30px;
+}
+
+h1 {
+    /* Marrón chocolate corporativo */
+    color: #803e1b;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eca76e;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    /* Marrón para las letras */
+    color: #74380d;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #eca76e;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #803e1b;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Botón principal del restaurante */
+.submit-btn {
+    background-color: #74380d;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #572908;
+}
+
+.privacy-policy {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #eca76e;
+    font-size: 14px;
+    color: #613014;
+    text-align: center;
+}
+
+.privacy-policy a {
+    color: #803e1b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.privacy-policy a:hover {
+    text-decoration: underline;
+}
+
+/* Botón de volver clásico de tu web */
+.volver {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #9f4413;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.volver:hover {
+    background: #7c340d;
+}
