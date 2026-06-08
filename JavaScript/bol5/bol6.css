@@ -1,0 +1,58 @@
+/* Estilos para el panel de selección de colores */
+.panel-configuracion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.control-color {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: bold;
+    color: #803e1b;
+}
+
+.control-color select {
+    padding: 8px 12px;
+    border: 2px solid #d69763;
+    border-radius: 4px;
+    background-color: white;
+    color: #572908;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Estilos para la tabla adaptados a La Clave del Chef */
+.tabla-recetas {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.tabla-recetas th {
+    background-color: #74380d;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+.tabla-recetas td {
+    padding: 12px;
+    border-bottom: 1px solid #d69763;
+    color: #333;
+}
+
+.volver-centro {
+    max-width: 250px;
+    margin: 20px auto;
+}

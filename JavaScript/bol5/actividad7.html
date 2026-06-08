@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 7 - Procedencia Andaluza</title>
+    <meta name="description" content="Muestra el origen de un usuario seleccionando provincias y pueblos de Andalucía.">
+    <link rel="stylesheet" href="actividad7.css">
+</head>
+<body>
+    <header>
+        <h1>La Clave del Chef - Actividad 7</h1>
+    </header>
+    <main class="contenedor">
+<a href="../index.html" class="btn-volver">Volver al Menú</a>    
+    <h2>Lugar de Origen</h2>
+        <form>
+            <div class="form-group">
+                <label for="persona">Su Nombre:</label>
+                <input type="text" id="persona" required>
+            </div>
+            <div class="form-group">
+                <label for="provincia">Provincia de Andalucía:</label>
+                <select id="provincia" required>
+                    <option value="almeriense">Almería</option>
+                    <option value="gaditano/a">Cádiz</option>
+                    <option value="cordobés/a">Córdoba</option>
+                    <option value="granadino/a">Granada</option>
+                    <option value="onubense">Huelva</option>
+                    <option value="jiennense">Jaén</option>
+                    <option value="malagueño/a">Málaga</option>
+                    <option value="sevillano/a">Sevilla</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="pueblo">Nombre del Pueblo / Municipio:</label>
+                <input type="text" id="pueblo" placeholder="Ej: Pozoblanco, Antequera..." required>
+            </div>
+            <button type="button" class="btn-enviar" onclick="mostrarGentilicio()">Generar Frase</button>
+        </form>
+        <div id="resultado" class="resultado-box"></div>
+    </main>
+    <script src="actividad7.js"></script>
+</body>
+</html>

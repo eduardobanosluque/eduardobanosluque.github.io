@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Clave del Chef - Local Storage Tabla</title>
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="bol6.css">
+</head>
+<body>
+
+    <header>
+        <h1>Ejercicios de JavaScript</h1>
+    </header>
+
+    <main class="caja-principal">
+        <section class="bloque-actividades">
+            <h2>Uso de Local Storage en Tablas</h2>
+            
+            <div class="panel-configuracion">
+                <div class="control-color">
+                    <label for="colorPares">Filas Pares (2):</label>
+                    <select id="colorPares">
+                        <option value="#ebd5c4">Crema (Defecto)</option>
+                        <option value="#fcd5ce">Rosado</option>
+                        <option value="#d8e2dc">Verde Menta</option>
+                        <option value="#ffe5ec">Pastel Pink</option>
+                        <option value="#e8e8e4">Gris Claro</option>
+                    </select>
+                </div>
+
+                <div class="control-color">
+                    <label for="colorImpares">Filas Impares (1, 3):</label>
+                    <select id="colorImpares">
+                        <option value="#ffffff">Blanco (Defecto)</option>
+                        <option value="#faedcd">Trigo</option>
+                        <option value="#dbcdf0">Lavanda</option>
+                        <option value="#f0ead2">Oliva Claro</option>
+                        <option value="#ffcad4">Coral Suave</option>
+                    </select>
+                </div>
+            </div>
+
+            <table id="tablaRecetas" class="tabla-recetas">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre Receta</th>
+                        <th>Ingredientes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Salmorejo</td>
+                        <td>Tomate, aceite y pan</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Gachas</td>
+                        <td>Harina, agua y azucar</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Migas</td>
+                        <td>Pan, ajo y aceite</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <a href="../index.html" class="boton volver-centro">Volver a pág principal</a>
+
+    <footer>
+        <p>© 2026 · Eduardo Baños Luque · 1º DAW</p>
+    </footer>
+
+    <script src="bol6.js"></script>
+</body>
+</html>

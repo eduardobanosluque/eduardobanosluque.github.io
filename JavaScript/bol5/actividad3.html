@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 3 - Estaciones del Año (Array)</title>
+    <meta name="description" content="Devuelve la estación del año según su índice numérico utilizando un Array.">
+    <link rel="stylesheet" href="actividad3.css">
+</head>
+<body>
+    <header>
+        <h1>La Clave del Chef - Actividad 3</h1>
+    </header>
+    <main class="contenedor">
+<a href="../index.html" class="btn-volver">Volver al Menú</a>
+        <h2>Buscar Estación</h2>
+        <form>
+            <div class="form-group">
+                <label for="numeroEstacion">Introduce un número (1 al 4):</label>
+                <input type="number" id="numeroEstacion" min="1" max="4" required>
+            </div>
+            <button type="button" class="btn-enviar" onclick="obtenerEstacionArray()">Ver Estación</button>
+        </form>
+        <div id="resultado" class="resultado-box"></div>
+    </main>
+    <script src="actividad3.js"></script>
+</body>
+</html>
